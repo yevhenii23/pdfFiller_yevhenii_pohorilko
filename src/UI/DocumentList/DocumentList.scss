@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.document-list {
+  
+    &__items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      width: $list-width;
+      height: 80px;
+      border-top: 1px solid #D4D4D4;
+      border-left: 1px solid #D4D4D4;
+      border-right: 1px solid #D4D4D4;
+      &:last-child {
+        border-bottom: 1px solid #D4D4D4;
+      }
+
+    }
+  
+    &__icon {
+      margin-right: 13px;
+      margin-left: 25px;
+      font-size: 1.5rem;
+    }
+  
+    &__name {
+      font-size: $text-size-large;
+      font-weight: 700;
+      color: #414141;
+    }
+  
+    &__date {
+      color: #6B6B6B;
+      font-size: $text-size;
+    }
+  
+    &__button {
+      margin: 24px;
+      margin-left: auto;
+    
+    }
+  }
+  

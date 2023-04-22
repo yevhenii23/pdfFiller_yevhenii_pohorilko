@@ -1,0 +1,39 @@
+.App {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.my-component {
+    &__container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    &__box {
+      display: flex;
+      flex-direction: column;
+      margin-right: 2;
+      > button {
+        margin-bottom: 12px;
+        margin-right: 32px;
+      }
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      color: #414141;
+      margin-bottom: 24px;
+    }
+    
+
+  }
+  

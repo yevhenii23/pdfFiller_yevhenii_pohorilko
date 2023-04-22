@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.mobile-document-list {
+
+  &__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    width: $modbile-list-width;
+    border-top: 1px solid #D4D4D4;
+    border-left: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+
+    &:last-child {
+      border-bottom: 1px solid #D4D4D4;
+    }
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    padding-left: 12px;
+  }
+
+
+  &__name {
+    color: #414141;
+    font-weight: 700;
+    font-size: $text-size-large;
+  }
+
+  &__date {
+    font-size: $text-size;
+    color: #6B6B6B;
+  }
+
+  &__button {
+    margin: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: $large-button-width;
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+@import '../../styles/variables';
+
+.button {
+  border-radius: 4px;
+  color: $text-color-white;
+  border: none;
+  padding: $button-padding;
+  font-size: $text-size;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  border: 1px solid $dark-orange;
+
+  &--small {
+    width: $small-button-width;
+    height: $button-height
+  }
+
+  &--large {
+    width: $large-button-width;
+    height: $button-height
+  }
+
+  &--orange {
+    background: linear-gradient(180deg, #FFAE45 0%, $dark-orange 100%);
+    color: $text-color-white;
+  }
+
+  &--gray {
+    background: linear-gradient(180deg, $bright-gray 0%, $dark-gray 100%);    ;
+    color: $text-color-black;
+    border: 1px solid #BFBFBF;
+  }
+
+  &--hover {
+    &:hover {
+      background: $bright-orange;
+    }
+  }
+  &--hover-gray {
+    &:hover {
+      background: $bright-gray;
+    }
+  }
+
+  &--active {
+    &:active {
+      background: linear-gradient(180deg,  $dark-orange 0%, #FFAE45 100%);
+    }
+  }
+
+  &--active-gray {
+    &:active {
+      background: linear-gradient(180deg, $dark-gray 0%, $bright-gray 100%);
+    }
+  }
+
+  &--disabled {
+    background: #FFD8A5;;
+    border: 1px solid #FFB85C;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  &--disabled-gray {
+    background: #F9F9F9;
+    border: 1px solid #BFBFBF;
+    cursor: not-allowed;
+  }
+
+  &--focus {
+    background: $bright-orange;
+    box-shadow: 0px 0px 4px  $dark-orange;
+  }
+
+  &--focus-gray {
+    background: linear-gradient(180deg, $bright-gray 0%, $dark-gray 100%);
+    box-shadow: 0px 0px 4px #BFBFBF;
+    border: 1px solid #BFBFBF;
+  }
+
+}
